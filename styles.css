@@ -78,11 +78,19 @@ nav li {
   margin-bottom: 0.5rem;
 }
 
-form#pet-form {
+.pet-options {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: column; /* 垂直排列选项 */
+  gap: 0.5rem; /* 选项之间的间距 */
   margin-bottom: 1rem;
+}
+
+#fetch-btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  width: auto;
+  max-width: 200px;
+  margin-top: 1rem;
 }
 
 #pet-form label {
