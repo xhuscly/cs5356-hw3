@@ -7,7 +7,19 @@ header, nav, main, h1, footer{
 	margin: 10px 0;
 	
 }
-
+.p-head .p__text {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: calc(50% - 0.46em);
+    left: calc(50% - 50em);
+    width: 100em;
+    pointer-events: none;
+    z-index: 1;
+    font: 300 15.95em /1 "Butler",sans-serif;
+    letter-spacing: 0;
+    text-align: center;
+}
 a:hover{
 	text-decoration:underline;
 	background-color:white;
@@ -80,6 +92,7 @@ main {
 
 footer {
   text-align: center;
-  padding: 1rem;
   background-color: #ccc;
+  padding-top: 1px;
+  text-align: center;
 }
