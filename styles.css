@@ -50,6 +50,7 @@ nav {
 }
 
 .intro-section > div {
+  flex: 1;
   max-width: 600px;
   line-height: 1.5;
 }
