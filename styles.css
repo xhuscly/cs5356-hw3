@@ -3,7 +3,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header, nav, main, h1, footer {
+ nav, main, h1, footer {
+  margin: 10px 0;	 
+}
+header {
   margin: 10px 0;	
   text-align: center;  
 }
