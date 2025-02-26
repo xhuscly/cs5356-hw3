@@ -78,7 +78,7 @@ nav li {
   margin-bottom: 0.5rem;
 }
 
-#pet-form {
+form#pet-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
