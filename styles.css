@@ -36,6 +36,16 @@ nav li{
 	display: inline;
 	padding-right: 50px;
   }
+
+.nav_item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_item a:hover {
+  text-decoration: underline;
+}
+
 #home{
 	color:white;
 	background:hsl(224, 89%, 59%);
