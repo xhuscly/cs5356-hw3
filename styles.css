@@ -64,24 +64,60 @@ nav li{
 	font-size: 1.2em;
 }
 
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
 .box {
   background-color: #fff;
-  flex: 1;              
-  padding: 1rem;
+  flex: 1;
   text-align: center;
+  padding: 1rem;
   border: 1px solid #ccc;
   transition: transform 0.3s;
 }
-
 .box:hover {
   transform: scale(1.05);
 }
 
-.flex-container {
-  display: flex;      /* 启用 Flexbox */
-  gap: 1rem;          /* 元素间距 */
-  margin: 1rem 0;
-  justify-content: space-around; /* 水平均匀分布 */
+/* 宠物选择区 */
+.pet-section {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+.pet-section h2 {
+  margin-bottom: 0.5rem;
+}
+#pet-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#pet-form label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+#pet-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#pet-form button:hover {
+  background-color: #0056b3;
+}
+#pet-image-container img {
+  display: block;
+  max-width: 300px;
+  margin-top: 1rem;
 }
 
 main {
@@ -90,22 +126,10 @@ main {
   margin: 0 auto;    
 }
 
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
 footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  background-color: #ccc;
-  padding-top: 1px;
-  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
