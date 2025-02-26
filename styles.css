@@ -12,20 +12,21 @@ a:hover{
 	text-decoration:underline;
 	background-color:white;
 }
+
 nav{  
 	 ext-align: right;  
  	 background-color: #333; 
  	 padding: 0.5rem 1rem;
 }
-  }
+
 .nav_links{
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-  list-style: none;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0
+  	list-style: none;
+ 	justify-content: flex-start;
+ 	padding: 0;
+ 	margin: 0
 }
 nav ul{
 	list-style-type: none;
