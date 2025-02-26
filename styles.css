@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  text-align: center; 
 }
 
 nav {
@@ -19,7 +20,7 @@ nav {
   gap: 1rem;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* 确保导航链接靠右对齐 */
+  justify-content: flex-end; 
 }
 
 .nav_item a {
@@ -32,15 +33,18 @@ nav {
 }
 
 .intro-section {
-  display: flex;            
-  align-items: center;    
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   text-align: center;
-  gap: 2rem;            
+  gap: 1rem; 
   background-color: #f2f2f2;
   padding: 2rem;
 }
+
 .intro-photo {
-  width: 300px;             /* Adjust as needed */
+  width: 300px;
+  max-width: 100%; 
   border-radius: 8px;
   object-fit: cover;
 }
@@ -56,7 +60,7 @@ nav {
   gap: 1rem;
   padding: 1rem;
   background-color: #eee;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .box {
@@ -74,8 +78,8 @@ nav {
 
 main {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem; /* 增加上下内边距 */
+  margin: 0 auto; /* 水平居中对齐 */
+  padding: 2rem 1rem;
 }
 
 .pet-section {
@@ -106,7 +110,7 @@ main {
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  margin-top: 1rem; /* 确保按钮与其他元素有一定的间距 */
+  margin-top: 1rem; 
 }
 
 #fetch-btn:hover {
@@ -116,7 +120,7 @@ main {
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 footer {
@@ -124,5 +128,5 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  margin-top: auto; /* 确保页脚始终位于页面底部 */
+  margin-top: auto; 
 }
