@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const fetchBtn = document.getElementById("fetch-btn");
-  const main = document.querySelector("main");
+ const dogImageContainer = document.getElementById("dog-image-container");
 
   if (fetchBtn) {
     fetchBtn.addEventListener("click", async () => {
