@@ -14,7 +14,7 @@ body {
   background-color: #fff;  
 }
 .profile-pic {
-  max-width: 150px;   
+  max-width: 80px;   
   border-radius: 50%;
   margin: 1rem 0;     /* Spacing around the image */
   display: block;     
