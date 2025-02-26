@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const fetchBtn = document.getElementById("fetch-btn");
-  const dogImageContainer = document.getElementById("dog-image-container");
+  const main = document.querySelector("main");
 
-  fetchBtn.addEventListener("click", async () => {
-    try {
-      const response = await fetch("https://dog.ceo/api/breeds/image/random");
-      const data = await response.json();
-
+  if (fetchBtn) {
+    fetchBtn.addEventListener("click", async () => {
+      try {
+        const response = await fetch("https://dog.ceo/api/breeds/image/random");
+        const data = await response.json();
+        
       const img = document.createElement("img");
       img.src = data.message;
       img.alt = "Random Dog";
       img.style.maxWidth = "300px";
       img.style.display = "block";
 
-      dogImageContainer.innerHTML = "";
+      main.appendChild(img);
 
-      // 把新的图片添加到容器中
-      dogImageContainer.appendChild(img);
-    } catch (error) {
-      console.error("获取狗狗图片失败：", error);
-    }
-  });
+      } catch (error) {
+        console.error("Unable to get this photo", error);
+      }
+    });
+  }
 });
