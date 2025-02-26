@@ -7,18 +7,32 @@ body {
   margin: 10px 0;	 
 }
 
-.intro {
-  text-align: center; 
-  margin: 0 auto;     
-  padding: 1rem;       /* Some spacing around the content */
-  background-color: #fff;  
+.intro-section {
+  display: flex;           
+  align-items: center;     
+  gap: 2rem;                
+  background-color: #f2f2f2;
+  padding: 2rem;           
+
+.intro-photo {
+  width: 300px;           
+  border-radius: 8px;      
+  object-fit: cover;      
 }
-.profile-pic {
-  max-width: 80px;   
-  border-radius: 50%;
-  margin: 1rem 0;     /* Spacing around the image */
-  display: block;    
+
+.intro-text {
+  max-width: 600px;         /* Limit text width so lines don't get too long */
+  line-height: 1.5;         /* Comfortable line spacing */
 }
+
+.intro-text h1 {
+  margin-bottom: 1rem;
+}
+
+.intro-text p {
+  margin-bottom: 0.75rem;
+}
+
 
 header {
   margin: 10px 0;	
