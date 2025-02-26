@@ -9,7 +9,7 @@ header, nav, main, h1, footer {
 
 a:hover {
   text-decoration: underline;
-  background-color: #ffff;
+  background-color: #fff; /* 修正为 #fff */
 }
 
 nav {  
@@ -29,8 +29,7 @@ nav {
 }
   
 nav li {
-  display: inline;
-  padding-right: 50px;
+  padding-right: 50px; /* 移除 display: inline; */
 }
 
 .nav_item a {
@@ -83,6 +82,7 @@ nav li {
   flex-direction: column; /* 垂直排列选项 */
   gap: 0.5rem; /* 选项之间的间距 */
   margin-bottom: 1rem;
+  align-items: flex-start; /* 确保选项左对齐 */
 }
 
 #fetch-btn {
@@ -91,6 +91,15 @@ nav li {
   width: auto;
   max-width: 200px;
   margin-top: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#fetch-btn:hover {
+  background-color: #0056b3;
 }
 
 #pet-form label {
@@ -99,35 +108,17 @@ nav li {
   gap: 0.25rem;
 }
 
-#pet-form button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-#pet-form button:hover {
-  background-color: #0056b3;
-}
-
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin-top: 1rem;
+  margin: 1rem auto 0; /* 上下间距 1rem，水平居中 */
 }
-#fetch-btn {
-  padding: 0.5rem 1rem; 
-  font-size: 1rem; 
-  width: auto; 
-  max-width: 200px; 
-  margin-top: 1rem; 
-}
+
 main {
   padding: 1rem;
   max-width: 1200px; 
   margin: 0 auto;    
+  box-sizing: border-box; /* 添加这一行 */
 }
 
 footer {
@@ -136,4 +127,5 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  box-sizing: border-box; /* 添加这一行 */
 }
