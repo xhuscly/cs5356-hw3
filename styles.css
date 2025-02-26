@@ -17,9 +17,7 @@ body {
   max-width: 80px;   
   border-radius: 50%;
   margin: 1rem 0;     /* Spacing around the image */
-  display: block;     
-  margin-left: auto; 
-  margin-right: auto; 
+  display: block;    
 }
 
 header {
