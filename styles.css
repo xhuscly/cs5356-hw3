@@ -35,7 +35,7 @@ nav {
 .intro-section {
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: flex-start; 
   text-align: center;
   gap: 1rem; 
   background-color: #f2f2f2;
