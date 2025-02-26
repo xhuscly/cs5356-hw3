@@ -1,67 +1,24 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
 }
 
- nav, main, h1, footer {
-  margin: 10px 0;	 
-}
-
-.intro-section {
-  display: flex;           
-  align-items: center;     
-  gap: 2rem;                
-  background-color: #f2f2f2;
-  padding: 2rem;           
-
-.intro-photo {
-  width: 300px;           
-  border-radius: 8px;      
-  object-fit: cover;      
-}
-
-.intro-text {
-  max-width: 600px;         /* Limit text width so lines don't get too long */
-  line-height: 1.5;         /* Comfortable line spacing */
-}
-
-.intro-text h1 {
-  margin-bottom: 1rem;
-}
-
-.intro-text p {
-  margin-bottom: 0.75rem;
-}
-
-
-header {
-  margin: 10px 0;	
-  text-align: center;  
-}
-
-a:hover {
-  text-decoration: underline;
-  background-color: #fff; 
-}
-
-nav {  
-  text-align: right;  
-  background-color: #333; 
-  padding: 0.5rem 1rem;
+nav {
+  background-color: #333;
+  padding: 1rem;
 }
 
 .nav_links {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
   list-style: none;
-  justify-content: flex-end; 
-  padding: 0;
+  display: flex;
+  gap: 1rem;
   margin: 0;
-}
-  
-nav li {
-  padding-right: 50px; 
+  padding: 0;
 }
 
 .nav_item a {
@@ -73,91 +30,91 @@ nav li {
   text-decoration: underline;
 }
 
-#home {
-  color: white;
-  background: hsl(224, 89%, 59%);
-  font-size: 1.2em;
+.intro-section {
+  display: flex;            /* Left: photo, Right: text */
+  align-items: center;      /* Vertically center them */
+  gap: 2rem;                /* Spacing between photo & text */
+  background-color: #f2f2f2;/* Light gray background (optional) */
+  padding: 2rem;
 }
 
-.flex-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.intro-photo {
+  width: 300px;             /* Adjust as needed */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* For the text portion inside .intro-section */
+.intro-section > div {
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.top-boxes {
+  display: flex;
+  justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
-}
- 
-.box {
-  background-color: #ffd364;
-  text-align: center;
   padding: 1rem;
-  border: 1px solid #ccc;
-  transition: transform 0.3s;
+  background-color: #eee;
 }
 
+.box {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
 .box:hover {
   transform: scale(1.05);
 }
 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* PET SECTION STYLES */
 .pet-section {
   background-color: #fff;
   padding: 1rem;
   border: 1px solid #ccc;
+  margin-top: 1rem;
+}
+.pet-section h2 {
   margin-bottom: 1rem;
 }
-
-.pet-section h2 {
-  margin-bottom: 0.5rem;
+#pet-form {
+  margin-bottom: 1rem;
 }
-
 .pet-options {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
-  align-items: flex-start; 
 }
-
 #fetch-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  width: auto;
-  max-width: 200px;
-  margin-top: 1rem;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
 }
-
 #fetch-btn:hover {
   background-color: #0056b3;
 }
-
-#pet-form label {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin: 1rem auto 0; 
-}
-
-main {
-  padding: 1rem;
-  max-width: 1200px; 
-  margin: 0 auto;    
-  box-sizing: border-box;
+  margin-top: 1rem;
 }
 
 footer {
+  text-align: center;
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  box-sizing: border-box; 
 }
