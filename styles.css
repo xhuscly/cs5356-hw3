@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  text-align: center; 
+  text-align: center; /* 全局文本居中对齐 */
 }
 
 nav {
@@ -20,7 +20,7 @@ nav {
   gap: 1rem;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; 
+  justify-content: flex-end; /* 导航链接靠右对齐 */
 }
 
 .nav_item a {
@@ -34,23 +34,22 @@ nav {
 
 .intro-section {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start; 
-  text-align: center;
-  gap: 1rem; 
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平居中对齐 */
+  text-align: center; /* 文本内容居中对齐 */
+  gap: 1rem; /* 元素之间的间距 */
   background-color: #f2f2f2;
   padding: 2rem;
 }
 
 .intro-photo {
   width: 300px;
-  max-width: 100%; 
+  max-width: 100%; /* 确保图片在小屏幕上不会溢出 */
   border-radius: 8px;
   object-fit: cover;
 }
 
 .intro-section > div {
-  flex: 1;
   max-width: 600px;
   line-height: 1.5;
 }
@@ -61,7 +60,7 @@ nav {
   gap: 1rem;
   padding: 1rem;
   background-color: #eee;
-  flex-wrap: wrap; 
+  flex-wrap: wrap; /* 确保在小屏幕上换行 */
 }
 
 .box {
@@ -94,15 +93,12 @@ main {
   margin-bottom: 1rem;
 }
 
-
-#pet-form label {
-  display: block; /* 每个选项单独占一行 */
-  margin-bottom: 0.5rem; /* 选项之间的间距 */
+#pet-form {
+  margin-bottom: 1rem;
 }
 
 .pet-options {
   display: flex;
-  flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -114,7 +110,7 @@ main {
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  margin-top: 1rem; 
+  margin-top: 1rem; /* 确保按钮与其他元素有一定的间距 */
 }
 
 #fetch-btn:hover {
@@ -124,7 +120,7 @@ main {
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin: 1rem auto;
+  margin: 1rem auto; 
 }
 
 footer {
@@ -132,5 +128,5 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  margin-top: auto; 
+  margin-top: auto;
 }
