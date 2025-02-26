@@ -94,9 +94,6 @@ main {
   margin-bottom: 1rem;
 }
 
-#pet-form {
-  margin-bottom: 1rem;
-}
 
 #pet-form label {
   display: block; /* 每个选项单独占一行 */
