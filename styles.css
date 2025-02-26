@@ -97,8 +97,14 @@ main {
   margin-bottom: 1rem;
 }
 
+#pet-form label {
+  display: block; /* 每个选项单独占一行 */
+  margin-bottom: 0.5rem; /* 选项之间的间距 */
+}
+
 .pet-options {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
   margin-bottom: 1rem;
 }
