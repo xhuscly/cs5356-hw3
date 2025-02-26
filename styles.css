@@ -1,35 +1,25 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
 }
 
-header, nav, main, h1, footer {
-  margin: 10px 0;	
-}
-
-a:hover {
-  text-decoration: underline;
-  background-color: #fff; /* 修正为 #fff */
-}
-
-nav {  
-  text-align: right;  
-  background-color: #333; 
-  padding: 0.5rem 1rem;
+nav {
+  background-color: #333;
+  padding: 1rem;
 }
 
 .nav_links {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
   list-style: none;
-  justify-content: flex-end; 
-  padding: 0;
+  display: flex;
+  gap: 1rem;
   margin: 0;
-}
-  
-nav li {
-  padding-right: 50px; /* 移除 display: inline; */
+  padding: 0;
+  justify-content: flex-end; /* 确保导航链接靠右对齐 */
 }
 
 .nav_item a {
@@ -41,91 +31,100 @@ nav li {
   text-decoration: underline;
 }
 
-#home {
-  color: white;
-  background: hsl(224, 89%, 59%);
-  font-size: 1.2em;
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  flex-wrap: wrap; /* 确保在小屏幕上换行 */
 }
 
-.flex-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-bottom: 1rem;
+.intro-photo {
+  width: 300px;
+  max-width: 100%; /* 确保图片在小屏幕上不会溢出 */
+  border-radius: 8px;
+  object-fit: cover;
 }
- 
-.box {
-  background-color: #ffd364;
-  text-align: center;
+
+.intro-section > div {
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.top-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   padding: 1rem;
+  background-color: #eee;
+  flex-wrap: wrap; /* 确保在小屏幕上换行 */
+}
+
+.box {
+  background-color: #fff;
+  padding: 1rem 2rem;
   border: 1px solid #ccc;
-  transition: transform 0.3s;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 0.2s;
 }
 
 .box:hover {
   transform: scale(1.05);
 }
 
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem; /* 增加上下内边距 */
+}
+
 .pet-section {
   background-color: #fff;
   padding: 1rem;
   border: 1px solid #ccc;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .pet-section h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#pet-form {
+  margin-bottom: 1rem;
 }
 
 .pet-options {
   display: flex;
-  flex-direction: column; /* 垂直排列选项 */
-  gap: 0.5rem; /* 选项之间的间距 */
+  gap: 1rem;
   margin-bottom: 1rem;
-  align-items: flex-start; /* 确保选项左对齐 */
 }
 
 #fetch-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  width: auto;
-  max-width: 200px;
-  margin-top: 1rem;
   background-color: #007bff;
   color: #fff;
   border: none;
   cursor: pointer;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
+  margin-top: 1rem; /* 确保按钮与其他元素有一定的间距 */
 }
 
 #fetch-btn:hover {
   background-color: #0056b3;
 }
 
-#pet-form label {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-}
-
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin: 1rem auto 0; /* 上下间距 1rem，水平居中 */
-}
-
-main {
-  padding: 1rem;
-  max-width: 1200px; 
-  margin: 0 auto;    
-  box-sizing: border-box; /* 添加这一行 */
+  margin-top: 1rem;
 }
 
 footer {
+  text-align: center;
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
-  box-sizing: border-box; 
+  margin-top: auto; /* 确保页脚始终位于页面底部 */
 }
