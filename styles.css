@@ -6,6 +6,14 @@ body {
  nav, main, h1, footer {
   margin: 10px 0;	 
 }
+
+.intro {
+  text-align: center; 
+  margin: 0 auto;     
+  padding: 1rem;       /* Some spacing around the content */
+  background-color: #fff;  
+}
+
 header {
   margin: 10px 0;	
   text-align: center;  
