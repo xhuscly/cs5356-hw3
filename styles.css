@@ -30,16 +30,17 @@ nav {
 .nav_item a:hover {
   text-decoration: underline;
 }
-
 .intro-section {
+  max-width: 900px;        /* 限制最大宽度以防过宽 */
+  margin: 0 auto;          /* 让 .intro-section 这个容器居中 */
   display: flex;
   flex-direction: row; 
-  text-align: center;
+  justify-content: center; /* 水平居中 */
+  align-items: center;     /* 垂直居中 */
   gap: 2rem; 
   background-color: #f2f2f2;
   padding: 2rem;
 }
-
 .intro-photo {
   width: 300px;
   max-width: 100%; /* 确保图片在小屏幕上不会溢出 */
@@ -48,9 +49,10 @@ nav {
 }
 
 .intro-section > div {
-  flex: 1; /* 文字容器占据剩余空间 */
-  max-width: 600px; /* 文字容器的最大宽度 */
-  line-height: 1.5; /* 行高 */
+  flex: 1; 
+  max-width: 600px; 
+  line-height: 1.5; 
+  text-align: center; 
 }
 
 .top-boxes {
