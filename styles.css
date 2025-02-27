@@ -19,7 +19,7 @@ nav {
   gap: 1rem;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* 确保导航链接靠右对齐 */
+  justify-content: flex-end; /* 导航链接靠右对齐 */
 }
 
 .nav_item a {
@@ -33,11 +33,11 @@ nav {
 
 .intro-section {
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: row; /* 水平排列 */
+  align-items: flex-start; /* 顶部对齐 */
+  gap: 2rem; /* 图片和文字之间的间距 */
   background-color: #f2f2f2;
   padding: 2rem;
-  flex-wrap: wrap; /* 确保在小屏幕上换行 */
 }
 
 .intro-photo {
@@ -48,8 +48,9 @@ nav {
 }
 
 .intro-section > div {
-  max-width: 600px;
-  line-height: 1.5;
+  flex: 1; /* 文字容器占据剩余空间 */
+  max-width: 600px; /* 文字容器的最大宽度 */
+  line-height: 1.5; /* 行高 */
 }
 
 .top-boxes {
@@ -76,8 +77,8 @@ nav {
 
 main {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem; /* 增加上下内边距 */
+  margin: 0 auto; /* 水平居中对齐 */
+  padding: 2rem 1rem;
 }
 
 .pet-section {
@@ -89,6 +90,7 @@ main {
 
 .pet-section h2 {
   margin-bottom: 1rem;
+  text-align: left; /* 标题左对齐 */
 }
 
 #pet-form {
@@ -97,8 +99,8 @@ main {
 
 .pet-options {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  flex-direction: column; /* 垂直排列 */
+  gap: 0.5rem; /* 选项之间的间距 */
 }
 
 #fetch-btn {
@@ -108,7 +110,7 @@ main {
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  margin-top: 1rem; /* 确保按钮与其他元素有一定的间距 */
+  margin-top: 1rem; 
 }
 
 #fetch-btn:hover {
@@ -118,7 +120,7 @@ main {
 #dog-image-container img {
   display: block;
   max-width: 300px;
-  margin-top: 1rem;
+  margin: 1rem auto; 
 }
 
 footer {
@@ -126,5 +128,5 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  margin-top: auto; /* 确保页脚始终位于页面底部 */
+  margin-top: auto; 
 }
