@@ -48,6 +48,7 @@ nav {
   max-width: 100%; /* 确保图片在小屏幕上不会溢出 */
   border-radius: 8px;
   object-fit: cover;
+  margin: 0 auto;    
 }
 
 .intro-section > div {
