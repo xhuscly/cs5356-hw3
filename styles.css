@@ -19,7 +19,7 @@ nav {
   gap: 1rem;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* 导航链接靠右对齐 */
+  justify-content: flex-end;
 }
 
 .nav_item a {
@@ -45,7 +45,7 @@ nav {
 
 .intro-photo {
   width: 300px;
-  max-width: 100%; /* 确保图片在小屏幕上不会溢出 */
+  max-width: 100%; 
   border-radius: 8px;
   object-fit: cover;
   margin: 0 auto;    
