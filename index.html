@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Website</title>
-</head>
-<body>
-   <nav>
-    <ul class="nav_links">
-      <li class="nav_item"><a href="index.html">Home</a></li>
-      <li class="nav_item"><a href="about.html">About Me</a></li>
-      <li class="nav_item"><a href="photos.html">Photos</a></li>
-    </ul>
-   </nav>
-    
-  <header class="intro-section">
+<header class="intro-section">
   <img src="myself.jpg" alt="My Photo" class="intro-photo" />
   <div>
     <h1>Welcome to My Site</h1>
@@ -32,49 +15,26 @@
   </div>
 </header>
 
-    <main>
-         <section class="flex-container">
-          <div class="box">CornellTech</div>
-          <div class="box">xh428</div>
-          <div class="box">Assignment3</div>
-        </section> 
-        
-        <section>
-          <details>
-            <summary>Click here~</summary>
-            <p>Here is <code>&lt;a short query&gt;</code> for our adorable pets</p>
-          </details>
-        </section>
-   
-       <section class="pet-section">
-          <h2>Are you a dog or cat person?</h2>
-          <form id="pet-form">
-            <div class="pet-options">
-              <label>
-                <input type="radio" name="pet" value="dog" checked>
-                Dog
-              </label>
-              <label>
-                <input type="radio" name="pet" value="cat">
-                Cat
-              </label>
-              <label>
-                <input type="radio" name="pet" value="both">
-                Both
-                </label>
-            </div>
-        <button id="fetch-btn">Get Random Dog</button>
-        <div id="dog-image-container"></div>
-      </form>
-    </section>
-        
-       
-    </main>
-
-    <footer>
-        <p>&copy; 2/25/2025 Xiyu</p>
-    </footer>
-
-    <script src="app.js"></script>
-</body>
-</html>
+<main>
+  <section class="pet-section">
+    <h2>Are you a dog or cat person?</h2>
+    <form id="pet-form">
+      <div class="pet-options">
+        <label>
+          <input type="radio" name="pet" value="dog" checked>
+          Dog
+        </label>
+        <label>
+          <input type="radio" name="pet" value="cat">
+          Cat
+        </label>
+        <label>
+          <input type="radio" name="pet" value="both">
+          Both
+        </label>
+      </div>
+      <button id="fetch-btn">Get Random Dog</button>
+      <div id="dog-image-container"></div>
+    </form>
+  </section>
+</main>
