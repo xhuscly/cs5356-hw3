@@ -36,7 +36,6 @@ nav {
   margin: 0 auto;         
   display: flex;
   flex-direction: row;
-  justify-content: center;   
   align-items:left;     
   gap: 2rem;
   background-color: #f2f2f2;
