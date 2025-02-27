@@ -62,7 +62,7 @@ nav {
 
 .pet-section h2 {
   margin-bottom: 1rem;
-  text-align: left; /* 标题左对齐 */
+  text-align: center; /* 标题左对齐 */
 }
 
 #pet-form {
